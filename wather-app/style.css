@@ -1,0 +1,109 @@
+*{
+    font-family:"Monserrat",sans-serif;
+    margin:0;
+    background-color: #f7f7f7;
+}
+
+.container{
+    margin:0 auto;
+    text-align:center;
+    width:600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    padding:20px;
+    border-radius:10px;
+    margin-top:50px;
+}
+
+.container h1{
+    font-size:38px;
+    color:#0077b6;
+}
+
+form{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:20px 0;
+
+}
+
+form input[type="text"]{
+    border:none;
+    font-size:19px;
+    padding:10px;
+    outline:none;
+}
+.button{
+    color:#fcf6bd;
+    background-color: #3a5a40;
+    font-size:19px;
+    border:none;
+    border-radius:10px;
+    padding:7px;
+    cursor:pointer;
+    transition:opacity .2s ease-in-out;
+    outline:none;
+}
+
+.button:hover{
+    opacity:.7;
+}
+
+.icon img{
+    width:90px;
+    margin:10px;
+    height:90px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+.temperature{
+    font-size:35px;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.discription{
+    font-size:22px;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.ditails{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.ditails > div{
+    padding:20px;
+    width:120px;
+    background-color:#f1f1f1;
+    margin:10px;
+    flex:1;
+    border-radius:5px;
+    box-shadow:2px 2px 10px rgba(0, 0, 0, .2);
+    text-align:center;
+    min-height:45px;
+    cursor:pointer;
+    transition:.2s ease-in-out;   
+}
+
+.ditails > div:hover{
+    transform:scale(1.1)
+}
+
+@media (max-width:770px) {
+    form{
+        flex-direction: column;
+        
+    }
+    form input[type="text"]{
+        width:100%;
+        margin-bottom:10px;
+    }
+    .ditails{
+        flex-direction:column;
+    }
+}
